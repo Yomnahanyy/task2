@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 20px;
+    background-color:rgba(0, 157, 255, 0.343);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* navbar*/
+.navbar{
+    background-color:rgba(30, 143, 255, 0.342);
+    color: aliceblue;
+    overflow: auto;
+}
+.navbar h1{
+    padding: 20px;
+    float:left
+}
+.navbar a{
+    color:#ffffff;
+    text-decoration: none;
+
+}
+.navbar ul{
+    float: right;
+    list-style: none;
+}
+.navbar ul li{
+    display: inline-block;
+}
+.navbar ul li a{
+    padding: 20px;
+    text-align: center;
+    display: block;
+    transition: 1s all;
+}
+.navbar ul li a:hover{
+    background-color:#ffffff;
+    color:brown;
+}
+/* home */
+.home{
+    background-image: linear-gradient(rgb(0,0,0,.5)70% , rgb(0,0,0,.5)30%),url(image..jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 600px;
+}
+.home .title{
+    color: aliceblue;
+    text-align: center;
+    padding-top: 150px;
+}
+.title h2{
+    padding: 5px;
+    font-size: 40px;
+}
+.title p{
+    padding:30px;
+    font-size: 18px;
+}
+.title h1{
+    text-align: center;
+}
+.title p{
+    text-align: center;
+}
+.title h3{
+    text-align: center;
+}
+.images{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+    overflow:auto;
+}
+.images img{
+    height:300px;
+    width:300px;
+    background-color:white;
+    padding: 10px;
+}
+@media (max-width:895px){
+
+.images{
+    display: grid;
+}
+}
+@media (max-width:591px){
+.left p{
+    margin: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.left img{
+    display: block;
+}
+}
+@media (max-width:426px) {
+.navbar{
+    height: auto;
+}
+.navbar ul {
+    display: flex;
+    flex-direction: column;
+}
+}
+    
+        
+    
